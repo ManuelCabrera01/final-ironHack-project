@@ -15,7 +15,7 @@ const userSchema = new Schema(
     image: {
     type: String, default: ''
     },
-    cat:{
+    category:{
       type: String,
       require :[true ,"please introduce a category"]
     },
