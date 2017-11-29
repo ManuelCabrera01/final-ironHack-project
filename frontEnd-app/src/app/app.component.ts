@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SessionService} from './session.service'
+import { FileUploader } from "ng2-file-upload";
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,15 @@ import { SessionService} from './session.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  uploader: FileUploader =  new FileUploader({
+    url:`/api/user`
+  });
 
   formInfo = {
     username: '',
-    password: ''
+    password: '',
+    cat:''
+
   };
     user: any;
   error: string;
@@ -39,6 +45,7 @@ export class AppComponent implements OnInit {
         (user) => this.successCb(user),
         (err) => this.errorCb(err)
       );
+    this.uploader.uploadAll();
   }
 
   logout() {
