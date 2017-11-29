@@ -12,6 +12,9 @@ const userSchema = new Schema(
       type: String,
       required: [true, "Password is required"]
     },
+    image: {
+    type: String, default: ''
+    },
     cat:{
       type: String,
       require :[true ,"please introduce a category"]

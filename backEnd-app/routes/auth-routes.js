@@ -3,9 +3,10 @@ const bcrypt  = require ('bcrypt');
 const User = require ('../models/user-model');
 const router = express.Router();
 
- router.post('/signup', (req, res, next)=>{
+ router.post('/signup', upload.single('file'), (req, res, next)=>{
    const username= req.body.username; //username from the user model schema = username from the form
    const password = req.body.password;
+    const image =  `/uploads/${req.file.filename}`,
 
    if (!username || !password){
      res.status(400).json({message:"provide username and password"});
