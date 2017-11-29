@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   formInfo = {
     username: '',
     password: '',
-    cat:''
+    category:''
 
   };
     user: any;

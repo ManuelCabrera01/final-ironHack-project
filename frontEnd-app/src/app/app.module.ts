@@ -12,8 +12,8 @@ import {FileUploadModule} from 'ng2-file-upload';
     AppComponent
   ],
   imports: [
-    FileUploadModule,
-    BrowserModule,
+     FileUploadModule,
+     BrowserModule,
      FormsModule,
      HttpModule
   ],
