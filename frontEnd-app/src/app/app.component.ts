@@ -9,7 +9,7 @@ import { FileUploader } from "ng2-file-upload";
 })
 export class AppComponent implements OnInit {
   uploader: FileUploader =  new FileUploader({
-    url:`/api/user`
+    url:`/api/login`
   });
 
   formInfo = {

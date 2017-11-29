@@ -31,6 +31,7 @@
 
 <div *ngIf="user">
   <h2>  {{ user.username }} Welcome back, ready to join a ride!! </h2>
+  <img height="300" [src]="user.image" />
   <p>here you can see a list of the lates ride that you can join to</p>
   <!-- <p> Here's the user object </p>
   <pre> {{ user | json }} </pre> -->
