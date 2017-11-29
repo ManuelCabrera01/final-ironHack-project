@@ -11,6 +11,13 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: [true, "Password is required"]
+    },
+    cat:{
+      type: String,
+      require :[true ,"please introduce a category"]
+    },
+    sessions:{
+      type: Number
     }
   },
   //Schema constructor setting
