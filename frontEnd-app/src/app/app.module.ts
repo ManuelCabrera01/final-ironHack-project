@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {FileUploadModule} from 'ng2-file-upload';
+import { InitalizeComponent } from './initalize/initalize.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InitalizeComponent
   ],
   imports: [
      FileUploadModule,
