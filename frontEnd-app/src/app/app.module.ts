@@ -23,4 +23,3 @@ import { InitalizeComponent } from './initalize/initalize.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-// duuuuuuuuuuuuuuuuuuudeeeeeeeeeeeeeeeeeeeee you have to corrk on thi s tomorrow 
